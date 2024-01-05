@@ -169,4 +169,7 @@ body{
     .drug-card {
         width: calc(100% - 20px);
     }
+    .category-list li a {
+        font-size: 0.5rem;
+    }
 }
