@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drug Categories</title>
+    <link rel="stylesheet" href="./assets/css/drugs.css">
+</head>
+<body>
+    <div class="header" id="header">
+       <a href="./index.html"> <img class="logo" src="./assets/images/pharmavisionLOGO_050514.png" alt="PharmaVision Logo"></a> 
+        <h1 class="header-text" id="header-text">Browse drugs by category and place an order in seconds</h1>
+    </div>
+
+    <div class="categories" id="categories">
+       <ul class="category-list" id="category-list">
+        <li><a href="#" data-category="antibiotic-drugs">Antibiotics</a></li>
+        <li><a href="#" data-category="cardiovascular-drugs">Cardiovascular</a></li>
+        <li><a href="#" data-category="antiviral-drugs">Antivirals</a></li>
+        <li><a href="#" data-category="sedative-drugs">Sedatives</a></li>
+        <li><a href="#" data-category="antidiabetic-drugs">Antidiabetics</a></li>
+        <li><a href="#" data-category="antidepressant-drugs">Antidepressants</a></li>
+        <li><a href="#" data-category="pain-relieve-drugs">Pain Relievers</a></li>
+        <li><a href="#" data-category="antihistamine-drugs">Antihistamines</a></li>
+        <li><a href="#" data-category="antacid-drugs">Antacids</a></li>
+        <li><a href="#" data-category="anti-inflammatory-drugs">Anti-inflammatory(non-steroidal)</a></li>
+       </ul>
+    </div>
+
+    <div id="drug-content">
+        <div id="antibiotic-drugs" class="category-drugs hidden">
+            <div class="drug-grid">
+                <!-- <p class="drug-grid-title">Antibiotics</p> -->
+                <div class="drug-card">
+                    <img src="./assets/images/Azithromycin.png" alt="Drug name">
+                    <button  class="place-order-btn" onclick="selectDrug('Sample Drug'); sendOrderToWhatsApp()" >Place Order</button>
+                </div>
+                <div class="drug-card">
+                    <img src="./assets/images/Antibiotics.png" alt="Drug name">
+                    <button  class="place-order-btn" onclick="selectDrug('Sample Drug'); sendOrderToWhatsApp()">Place Order</button>
+                </div>
+                <div class="drug-card">
+                    <img src="./assets/images/Azithromycin.png" alt="Drug name">
+                    <button class="place-order-btn" onclick="selectDrug('Sample Drug'); sendOrderToWhatsApp()">Place Order</button>
+                </div>
+                <div class="drug-card">
+                    <img src="./assets/images/Antibiotics.png" alt="Drug name">
+                    <button class="place-order-btn" onclick="selectDrug('Sample Drug'); sendOrderToWhatsApp()">Place Order</button>
+                </div>
+            </div>
+        </div>     
+             
+        </div>
+        <div id="cardiovascular-drugs" class="category-drugs hidden">
+            <div class="drug-grid">
+                <div class="drug-card">
+                    <img src="./assets/images/.png" alt="Drug name">
+                    <button class="place-order-btn" onclick="selectDrug('Sample Drug'); sendOrderToWhatsApp()">Place Order</button>
+                </div>
+                <div class="drug-card">
+                    <img src="./assets/images/cardio.png" alt="Drug name">
+                    <button  class="place-order-btn" onclick="selectDrug('Sample Drug'); sendOrderToWhatsApp()">Place Order</button>
+                </div>
+            </div>
+        </div>
+        <div id="antiviral-drugs" class="category-drugs hidden">
+            <div class="drug-grid">
+                <div class="drug-card">
+                    <img src="./assets/images/Acyclovir.png" alt="Drug name">
+                    <button  class="place-order-btn" onclick="selectDrug('Sample Drug'); sendOrderToWhatsApp()">Place Order</button>
+                </div>
+                <div class="drug-card">
+                    <img src="./assets/images/.png" alt="Drug name">
+                    <button class="place-order-btn" onclick="selectDrug('Sample Drug'); sendOrderToWhatsApp()">Place Order</button>
+                </div>
+                  
+            </div>
+        </div>
+        <div id="sedative-drugs" class="category-drugs hidden">
+            <div class="drug-grid">
+                <div class="drug-card">
+                    <img src="./assets/images/.png" alt="Drug name">
+                    <button class="place-order-btn" onclick="selectDrug('Sample Drug'); sendOrderToWhatsApp()">Place Order</button>
+                </div>
+                <div class="drug-card">
+                    <img src="./assets/images/.png" alt="Drug name">
+                    <button class="place-order-btn" onclick="selectDrug('Sample Drug'); sendOrderToWhatsApp()">Place Order</button>
+                </div>
+                <div class="drug-card">
+                    <img src="./assets/images/.png" alt="Drug name">
+                    <button class="place-order-btn" onclick="selectDrug('Sample Drug'); sendOrderToWhatsApp()">Place Order</button>
+                </div>
+                  
+            </div>
+        </div>
+        <div id="antidiabetic-drugs" class="category-drugs hidden">
+            <div class="drug-grid">
+                <div class="drug-card">
+                    <img src="./assets/images/.png" alt="Drug name">
+                    <button class="place-order-btn" onclick="selectDrug('Sample Drug'); sendOrderToWhatsApp()">Place Order</button>
+                </div>
+                <div class="drug-card">
+                    <img src="./assets/images/.png" alt="Drug name">
+                    <button class="place-order-btn" onclick="selectDrug('Sample Drug'); sendOrderToWhatsApp()">Place Order</button>
+                </div>
+                  
+            </div>
+        </div>
+        <div id="antidepressant-drugs" class="category-drugs hidden">
+            <div class="drug-grid">
+                <div class="drug-card">
+                    <img src="./assets/images/escitalopram.png" alt="Drug name">
+                    <button class="place-order-btn" onclick="selectDrug('Sample Drug'); sendOrderToWhatsApp()">Place Order</button>
+                </div>
+                <div class="drug-card">
+                    <img src="./assets/images/escitalopram.png" alt="Drug name">
+                    <button class="place-order-btn" onclick="selectDrug('Sample Drug'); sendOrderToWhatsApp()">Place Order</button>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div id="pain-relieve-drugs" class="category-drugs hidden">
+            <div class="drug-grid">
+                <div class="drug-card">
+                    <img src="./assets/images/Paracetamol.png" alt="Drug name">
+                    <button class="place-order-btn" onclick="selectDrug('Sample Drug'); sendOrderToWhatsApp()">Place Order</button>
+                </div>
+                <div class="drug-card">
+                    <img src="./assets/images/Tylenol.png" alt="Drug name">
+                    <button  class="place-order-btn" onclick="selectDrug('Sample Drug'); sendOrderToWhatsApp()">Place Order</button>
+                </div>
+                <div class="drug-card">
+                    <img src="./assets/images/Advil.png" alt="Drug name">
+                    <button  class="place-order-btn" onclick="selectDrug('Sample Drug'); sendOrderToWhatsApp()">Place Order</button>
+                </div>
+                <div class="drug-card">
+                    <img src="./assets/images/Aleve.png" alt="Drug name">
+                    <button class="place-order-btn" onclick="selectDrug('Sample Drug'); sendOrderToWhatsApp()">Place Order</button>
+                </div>
+            </div>
+        </div>
+        <div id="antihistamine-drugs" class="category-drugs hidden">
+            <div class="drug-grid">
+                <div class="drug-card">
+                    <img src="./assets/images/Claritin.png" alt="Drug name">
+                    <button  class="place-order-btn" onclick="selectDrug('Sample Drug'); sendOrderToWhatsApp()">Place Order</button>
+                </div>
+                <div class="drug-card">
+                    <img src="./assets/images/Benadryl.png" alt="Drug name">
+                    <button class="place-order-btn" onclick="selectDrug('Sample Drug'); sendOrderToWhatsApp()">Place Order</button>
+                </div>
+                <div class="drug-card">
+                    <img src="./assets/images/.png" alt="Drug name">
+                    <button class="place-order-btn" onclick="selectDrug('Sample Drug'); sendOrderToWhatsApp()">Place Order</button>
+                </div>
+                  
+            </div>
+        </div>
+        <div id="antacid-drugs" class="category-drugs hidden">
+            <div class="drug-grid">
+                <div class="drug-card">
+                    <img src="./assets/images/tums.png" alt="Drug name">
+                    <button class="place-order-btn" onclick="selectDrug('Sample Drug'); sendOrderToWhatsApp()">Place Order</button>
+                </div>
+                <div class="drug-card">
+                    <img src="./assets/images/Ranitidin.png" alt="Drug name">
+                    <button class="place-order-btn" onclick="selectDrug('Sample Drug'); sendOrderToWhatsApp()">Place Order</button>
+                </div>
+                <div class="drug-card">
+                    <img src="./assets/images/.png" alt="Drug name">
+                    <button class="place-order-btn" onclick="selectDrug('Sample Drug'); sendOrderToWhatsApp()">Place Order</button>
+                </div>
+                  
+            </div>
+        </div>
+        <div id="anti-inflammatory-drugs" class="category-drugs hidden">
+            <div class="drug-grid">
+                <div class="drug-card">
+                    <img src="./assets/images/diclo.png" alt="Drug name">
+                    <button class="place-order-btn" onclick="selectDrug('Sample Drug'); sendOrderToWhatsApp()">Place Order</button>
+                </div>
+                <div class="drug-card">
+                    <img src="./assets/images/Meloxicam.png" alt="Drug name">
+                    <button class="place-order-btn" onclick="selectDrug('Sample Drug'); sendOrderToWhatsApp()">Place Order</button>
+                </div>
+                <div class="drug-card">
+                    <img src="./assets/images/.png" alt="Drug name">
+                    <button class="place-order-btn" onclick="selectDrug('Sample Drug'); sendOrderToWhatsApp()">Place Order</button>
+                </div>
+                  
+            </div>
+        </div>
+        
+          
+    </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Get all category links
+        const categoryLinks = document.querySelectorAll('.category-list a');
+
+        // Show the default category (e.g., Antibiotics) on page load
+        const defaultCategory = document.getElementById('antibiotic-drugs');
+        defaultCategory.classList.remove('hidden');
+
+
+        // Add click event listener to each category link
+        categoryLinks.forEach(link => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault();
+                const targetCategory = event.target.getAttribute('data-category');
+                const drugContentDiv = document.getElementById('drug-content');
+
+                // Toggle the 'hidden' class for all category content divs
+                document.querySelectorAll('.category-drugs').forEach(div => {
+                    div.classList.toggle('hidden', div.id !== targetCategory);
+                });
+
+                // Update grid column count based on content
+                const targetContentDiv = document.getElementById(targetCategory);
+                const drugCards = targetContentDiv.querySelectorAll('.drug-card');
+                const gridColumns = Math.min(4, Math.ceil(drugCards.length / 2));
+                targetContentDiv.querySelector('.drug-grid').style.gridTemplateColumns = `repeat(auto-fit, minmax(200px, ${100 / gridColumns}%))`;
+
+                // Optional: Scroll to the drug content section
+                window.scrollTo({
+                    top: drugContentDiv.offsetTop,
+                    behavior: 'smooth'
+                });
+        });
+    });
+});
+ // Sample function to simulate drug selection
+ function selectDrug(drugName) {
+        localStorage.setItem('selectedDrug', drugName);
+        // alert(`${drugName} selected!`);
+    }
+
+    function sendOrderToWhatsApp() {
+        // Retrieve the selected drug from local storage
+        const selectedDrug = localStorage.getItem('selectedDrug');
+        const phoneNumber = +2347031696294
+        if (!selectedDrug) {
+            alert('Please select a drug before placing an order.');
+        } else {
+            const orderMessage = `Order Details:\n${selectedDrug} - Quantity: `;
+            const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(orderMessage)}`;
+
+            // Open WhatsApp with the pre-filled message
+            window.open(whatsappLink, '_blank');
+        }
+    }
+</script> 
+</body>
+</html>
