@@ -155,12 +155,19 @@ body{
     .drug-card {
         width: calc(25% - 20px);
     }
+
+    .category-list li a {
+        font-size: 0.75rem;
+    }
 }
 
 /* Media query for medium screens (tablets/iPads) */
 @media screen and (max-width: 1023px) and (min-width: 600px) {
     .drug-card {
         width: calc(50% - 20px);
+    }
+    .category-list li a {
+        font-size: 0.8rem;
     }
 }
 
@@ -170,6 +177,6 @@ body{
         width: calc(100% - 20px);
     }
     .category-list li a {
-        font-size: 0.5rem;
+        font-size: 0.7rem;
     }
 }
