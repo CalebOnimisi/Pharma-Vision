@@ -72,6 +72,7 @@ body{
    cursor: pointer;
    color: blue;
    font-size: var(--text-sm);
+   font-weight: bold;
    margin: 0px 5px 10px 10px;
    /* padding-bottom: 15px;
    margin-bottom: 15px; */
@@ -157,7 +158,8 @@ body{
     }
 
     .category-list li a {
-        font-size: 0.75rem;
+        font-size: 0.95rem;
+        
     }
 }
 
@@ -167,7 +169,7 @@ body{
         width: calc(50% - 20px);
     }
     .category-list li a {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
     }
 }
 
@@ -177,6 +179,6 @@ body{
         width: calc(100% - 20px);
     }
     .category-list li a {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
 }
